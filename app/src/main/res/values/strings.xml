@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UIexplore</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login">Đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="email">Email</string>
+    <string name="top_icon">haha</string>
+    <string name="login_text">ĐĂNG NHẬP HỆ THỐNG</string>
+    <string name="powered_by">Powered by VIMARU</string>
+    <string name="register_txt">ĐĂNG KÍ KHUÔN MẶT MỚI</string>
+    <string name="recog_txt">ĐIỂM DANH HỌC VIÊN</string>
+</resources>
