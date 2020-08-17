@@ -1,7 +1,6 @@
 package com.example.uiexplore;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
@@ -9,30 +8,32 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 
 import java.util.Objects;
 
-public class Profile extends AppCompatActivity {
-    CardView cvRollCall;
+public class FaceConfirm extends AppCompatActivity {
+
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
-
-        Window window = Profile.this.getWindow();
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        window.setStatusBarColor(ContextCompat.getColor(Profile.this, R.color.profilePage));
+        setContentView(R.layout.activity_face_confirm);
 
         Objects.requireNonNull(getSupportActionBar()).hide();
-//        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
 
-        cvRollCall = findViewById(R.id.cv_roll_call);
-        cvRollCall.setOnClickListener(new View.OnClickListener() {
+        Window window = FaceConfirm.this.getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.setStatusBarColor(ContextCompat.getColor(FaceConfirm.this, R.color.btnBlue));
+
+        button = findViewById(R.id.button4);
+
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Profile.this, FaceConfirm.class);
+                Intent intent = new Intent(FaceConfirm.this, UnknownFace.class);
                 startActivity(intent);
             }
         });

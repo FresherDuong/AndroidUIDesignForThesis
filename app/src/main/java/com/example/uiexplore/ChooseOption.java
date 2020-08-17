@@ -37,5 +37,13 @@ public class ChooseOption extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btn_register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ChooseOption.this, QRResult.class);
+                startActivity(intent);
+            }
+        });
     }
 }

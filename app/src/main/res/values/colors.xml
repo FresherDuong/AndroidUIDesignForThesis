@@ -5,4 +5,6 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="statusBarChooseOptions">#3c6bfb</color>
     <color name="profilePage">#027ad7</color>
+    <color name="btnBlue">#0039F1</color>
+    <color name="errorColor">#ff5f40</color>
 </resources>
