@@ -13,7 +13,7 @@ import android.view.WindowManager;
 import java.util.Objects;
 
 public class Profile extends AppCompatActivity {
-    CardView cvRollCall;
+    CardView cvRollCall, cvTimeTable, cvClassroom, cvLogOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +34,32 @@ public class Profile extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Profile.this, FaceConfirm.class);
                 startActivity(intent);
+            }
+        });
+
+        cvTimeTable = findViewById(R.id.cv_time_table);
+        cvTimeTable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Profile.this, TimeTable.class);
+                startActivity(intent);
+            }
+        });
+
+        cvClassroom = findViewById(R.id.cv_classroom);
+        cvClassroom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Profile.this, Classroom.class);
+                startActivity(intent);
+            }
+        });
+
+        cvLogOut = findViewById(R.id.cv_log_out);
+        cvLogOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }
