@@ -13,7 +13,7 @@ import android.view.WindowManager;
 import java.util.Objects;
 
 public class Profile extends AppCompatActivity {
-    CardView cvRollCall, cvTimeTable, cvClassroom, cvLogOut;
+    CardView cvRollCall, cvTimeTable, cvClassroom, cvLogOut, cvSearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +60,15 @@ public class Profile extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
+            }
+        });
+
+        cvSearch = findViewById(R.id.cv_search);
+        cvSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Profile.this, Search.class);
+                startActivity(intent);
             }
         });
     }

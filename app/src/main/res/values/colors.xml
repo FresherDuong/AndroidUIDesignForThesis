@@ -11,4 +11,6 @@
     <color name="nicePink">#F63EA5</color>
     <color name="niceGreen">#59B358</color>
     <color name="niceYellow">#f5a62e</color>
+    <color name="startGradient">#FD232A</color>
+    <color name="endGradient">#70171D</color>
 </resources>

@@ -46,6 +46,10 @@ public class StudentProfile extends AppCompatActivity {
 
         Intent intent = getIntent();
         String studentName = intent.getStringExtra("studentName");
-        txtStudentName.setText(studentName);
+        if(studentName != null) {
+            txtStudentName.setText(studentName);
+        } else {
+            txtStudentName.setText("Nguyễn Hữu Tuân");
+        }
     }
 }
