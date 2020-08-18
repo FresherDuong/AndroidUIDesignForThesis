@@ -9,11 +9,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import java.util.Objects;
 
 public class Profile extends AppCompatActivity {
-    CardView cvRollCall, cvTimeTable, cvClassroom, cvLogOut, cvSearch;
+    CardView cvRollCall, cvTimeTable, cvClassroom, cvLogOut, cvSearch, cvSync;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +70,14 @@ public class Profile extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Profile.this, Search.class);
                 startActivity(intent);
+            }
+        });
+
+        cvSync = findViewById(R.id.cv_sync);
+        cvSync.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(Profile.this, "Syncing...", Toast.LENGTH_SHORT).show();
             }
         });
     }

@@ -199,6 +199,41 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_sync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="12dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/sync_icon"/>
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="Đồng bộ dữ liệu"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textColor="#213377"
+                        android:layout_marginTop="12dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:id="@+id/cv_log_out"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -223,7 +258,7 @@
                     <TextView
                         android:layout_width="110dp"
                         android:layout_height="wrap_content"
-                        android:text="Đăng xuất"
+                        android:text="Đăng xuất tài khoản"
                         android:textAlignment="center"
                         android:textSize="18sp"
                         android:textColor="#213377"

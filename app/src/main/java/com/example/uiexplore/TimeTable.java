@@ -39,7 +39,7 @@ public class TimeTable extends AppCompatActivity {
         timeTableData.add(new TimeTableData("Thứ bảy", 2));
 
 
-        TimeTableAdapter timeTableAdapter = new TimeTableAdapter(timeTableData);
+        TimeTableAdapter timeTableAdapter = new TimeTableAdapter(timeTableData, TimeTable.this);
         timeTable.setLayoutManager(new LinearLayoutManager(this));
         timeTable.setAdapter(timeTableAdapter);
     }

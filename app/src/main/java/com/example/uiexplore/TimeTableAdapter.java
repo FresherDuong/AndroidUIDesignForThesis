@@ -1,6 +1,7 @@
 package com.example.uiexplore;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,10 +18,11 @@ import java.util.ArrayList;
 public class TimeTableAdapter extends RecyclerView.Adapter<TimeTableAdapter.ViewHolder>
 {
     private ArrayList<TimeTableData> listdata;
+    private Context context;
 
-
-    public TimeTableAdapter(ArrayList<TimeTableData> dataModel) {
+    public TimeTableAdapter(ArrayList<TimeTableData> dataModel, Context c) {
         this.listdata = dataModel;
+        this.context = c;
     }
 
     @NonNull
@@ -35,9 +37,18 @@ public class TimeTableAdapter extends RecyclerView.Adapter<TimeTableAdapter.View
     @Override
     public void onBindViewHolder(@NonNull TimeTableAdapter.ViewHolder holder, int position) {
         String myListData = listdata.get(position).getNumOfClass() + "";
+        final String day = listdata.get(position).getDay();
 
-        holder.txtDay.setText(listdata.get(position).getDay());
+        holder.txtDay.setText(day);
         holder.txtNumOfClass.setText(myListData);
+        holder.btnDetailTable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, Schedule.class);
+                intent.putExtra("day", day);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -48,11 +59,14 @@ public class TimeTableAdapter extends RecyclerView.Adapter<TimeTableAdapter.View
     public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView txtDay;
         public TextView txtNumOfClass;
+        public Button btnDetailTable;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             this.txtDay = itemView.findViewById(R.id.txt_day);
             this.txtNumOfClass = itemView.findViewById(R.id.numOfClass);
+            this.btnDetailTable = itemView.findViewById(R.id.btn_time_table_detail);
         }
     }
 }
