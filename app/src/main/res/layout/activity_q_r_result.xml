@@ -77,7 +77,7 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.1" />
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView6"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -85,7 +85,9 @@
         android:layout_marginTop="15dp"
         app:layout_constraintStart_toStartOf="@+id/view4"
         app:layout_constraintTop_toTopOf="@+id/view4"
-        app:srcCompat="@drawable/ninja" />
+        android:src="@drawable/user"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
 
     <TextView
         android:id="@+id/textView11"

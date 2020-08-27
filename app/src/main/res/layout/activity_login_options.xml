@@ -54,7 +54,7 @@
         android:layout_marginTop="20dp"
         android:text="Sử dụng tài khoản"
         android:textColor="#ffffff"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/viewLoginAccount"
         app:layout_constraintTop_toTopOf="@+id/viewLoginAccount" />
@@ -67,7 +67,7 @@
         android:layout_marginTop="20dp"
         android:text="Sử dụng khuôn mặt"
         android:textColor="#ffffff"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/viewLoginFace"
         app:layout_constraintTop_toTopOf="@+id/viewLoginFace" />
@@ -77,17 +77,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
-        android:text="Sử dụng tài khoản và mật khẩu được\ncung cấp để đăng nhập"
+        android:text="Sử dụng tài khoản và mật\nkhẩu được cung cấp để đăng nhập"
         android:textColor="#E6E6E6"
         app:layout_constraintStart_toStartOf="@+id/viewLoginAccount"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/face_id_white"
+        app:layout_constraintBottom_toBottomOf="@+id/viewLoginFace"
+        app:layout_constraintEnd_toEndOf="@+id/viewLoginFace"
+        app:layout_constraintTop_toTopOf="@+id/viewLoginFace" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/account"
+        app:layout_constraintBottom_toBottomOf="@+id/viewLoginAccount"
+        app:layout_constraintEnd_toEndOf="@+id/viewLoginAccount"
+        app:layout_constraintTop_toTopOf="@+id/viewLoginAccount" />
 
     <TextView
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
-        android:text="Sử dụng khuôn mặt đã đăng kí để\nđăng nhập"
+        android:text="Sử dụng khuôn mặt đã đăng\nkí để đăng nhập"
         android:textColor="#E6E6E6"
         app:layout_constraintStart_toStartOf="@+id/viewLoginFace"
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
