@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
-        android:text="đăng kí khuôn mặt mới"
+        android:text="Thông tin đăng nhập"
         android:textAllCaps="true"
         android:textColor="#28336C"
         android:textSize="24sp"
@@ -24,7 +24,7 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Đăng kí khuôn mặt phục vụ \nhệ thống điểm danh nhận dạng khuôn mặt"
+        android:text="Thông tin tài khoản tương ứng với\nkhuôn mặt bạn vừa đăng nhập"
         android:textAlignment="center"
         android:textColor="#afafaf"
         android:textSize="14sp"
@@ -34,13 +34,15 @@
 
     <View
         android:id="@+id/view4"
-        android:layout_width="340dp"
-        android:layout_height="225dp"
-        android:background="@drawable/bg_card_pay"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_gradient4"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login_face"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
 
     <Button
         android:id="@+id/btn_login_face"
@@ -49,8 +51,8 @@
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:layout_marginBottom="25dp"
-        android:background="@drawable/btn_blue"
-        android:text="tiến hành đăng kí"
+        android:background="@drawable/bg_gradient4"
+        android:text="Đăng nhập"
         android:textAllCaps="true"
         android:textColor="#ffffff"
         android:textSize="20sp"
@@ -62,7 +64,8 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="*Thông tin học viên đăng kí trên mã QR"
+        android:layout_marginTop="5dp"
+        android:text="*Thông tin tài khoản đăng nhập"
         android:textAlignment="center"
         android:textColor="#afafaf"
         android:textSize="15sp"
@@ -93,7 +96,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="18dp"
-        android:text="Phạm Thị Nga"
+        android:text="Phạm Lưu Tuấn Tài"
         android:textAllCaps="true"
         android:textColor="#ffffff"
         android:textSize="16dp"
@@ -106,8 +109,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="2dp"
-        android:text="Học viên mới"
-        android:textColor="#6D8BED"
+        android:text="Giáo viên hướng dẫn lái xe"
+        android:textColor="#FFE2B7"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -115,12 +118,11 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="5f244cd9ca0dc241cb68a5c7"
-        android:textAllCaps="true"
+        android:text="phamluutuantai@gmail.com"
         android:textColor="#ffffff"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="@+id/view4"
         app:layout_constraintStart_toStartOf="@+id/view4"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 </androidx.constraintlayout.widget.ConstraintLayout>

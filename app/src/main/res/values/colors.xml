@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#005779</color>
-    <color name="colorPrimaryDark">#005779</color>
+    <color name="colorPrimary">#027ad7</color>
+    <color name="colorPrimaryDark">#027ad7</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="statusBarChooseOptions">#3c6bfb</color>
     <color name="profilePage">#027ad7</color>
@@ -11,6 +11,12 @@
     <color name="nicePink">#F63EA5</color>
     <color name="niceGreen">#59B358</color>
     <color name="niceYellow">#f5a62e</color>
-    <color name="startGradient">#FD232A</color>
-    <color name="endGradient">#70171D</color>
+    <color name="startGradient">#8a4ca8</color>
+    <color name="endGradient">#bc382c</color>
+    <color name="b1StartGra">#4e91fc</color>
+    <color name="b1EndGra">#54befb</color>
+    <color name="b2StartGra">#ea5b95</color>
+    <color name="b2EndGra">#f4a068</color>
+    <color name="blurWhite">#f5f6f9</color>
+    <color name="b4StartGra">#f6a72e</color>
 </resources>

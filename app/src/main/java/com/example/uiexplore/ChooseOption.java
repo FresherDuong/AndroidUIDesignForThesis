@@ -33,7 +33,7 @@ public class ChooseOption extends AppCompatActivity {
         btn_reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ChooseOption.this, Login.class);
+                Intent intent = new Intent(ChooseOption.this, LoginOptions.class);
                 startActivity(intent);
             }
         });

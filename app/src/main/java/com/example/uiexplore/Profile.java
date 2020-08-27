@@ -33,7 +33,7 @@ public class Profile extends AppCompatActivity {
         cvRollCall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Profile.this, FaceConfirm.class);
+                Intent intent = new Intent(Profile.this, RecogType.class);
                 startActivity(intent);
             }
         });

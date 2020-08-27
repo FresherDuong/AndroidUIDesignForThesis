@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.uiexplore">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_car"
@@ -9,8 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Schedule"></activity>
-        <activity android:name=".Search"></activity>
+        <activity android:name=".FaceConfirmLogin"></activity>
+        <activity android:name=".LoginOptions" />
+        <activity android:name=".RecogType" />
+        <activity
+            android:name="com.king.zxing.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CaptureTheme" />
+        <activity android:name=".Schedule" />
+        <activity android:name=".Search" />
         <activity android:name=".StudentProfile" />
         <activity android:name=".Student" />
         <activity android:name=".Classroom" />
