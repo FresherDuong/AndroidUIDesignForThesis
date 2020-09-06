@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EBEBEB"
-    tools:context=".FaceConfirm">
+    tools:context=".FaceCheckInConfirm">
 
 
     <ImageView
@@ -22,7 +22,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Thông tin nhận dạng"
+        android:text="Thông tin check in"
         android:textAllCaps="true"
         android:textColor="#ffffff"
         android:textSize="25sp"
@@ -104,7 +104,7 @@
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:background="@drawable/btn_blue"
-        android:text="OK"
+        android:text="Check in"
         android:textColor="#ffffff"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/button4"

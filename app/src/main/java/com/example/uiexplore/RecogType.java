@@ -32,12 +32,12 @@ public class RecogType extends AppCompatActivity {
         vCheckOut = findViewById(R.id.viewLoginFace);
 
         vCheckIn.setOnClickListener(view -> {
-            Intent intent = new Intent(RecogType.this, FaceConfirm.class);
+            Intent intent = new Intent(RecogType.this, FaceCheckInConfirm.class);
             startActivity(intent);
         });
 
         vCheckOut.setOnClickListener(view -> {
-            Intent intent = new Intent(RecogType.this, UnknownFace.class);
+            Intent intent = new Intent(RecogType.this, FaceCheckOutConfirm.class);
             startActivity(intent);
         });
     }
