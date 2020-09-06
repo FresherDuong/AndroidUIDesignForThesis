@@ -5,6 +5,8 @@ import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -28,12 +30,16 @@ public class Login extends AppCompatActivity {
 
         btnLogin = findViewById(R.id.btnLogin);
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        btnLogin.setOnClickListener(view -> {
+            MyCustomDialog loadingSpinner = new MyCustomDialog(Login.this, "Xác thực tài khoản...");
+            loadingSpinner.startLoadingDialog();
+
+            new Handler(Looper.getMainLooper()).postDelayed(() -> {
+                loadingSpinner.dismissDialog();
                 Intent intent = new Intent(Login.this, Profile.class);
                 startActivity(intent);
-            }
+                finish();
+            }, 4000);
         });
     }
 }

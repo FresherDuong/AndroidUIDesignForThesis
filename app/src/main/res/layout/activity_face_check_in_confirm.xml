@@ -98,7 +98,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_login_face"
+        android:id="@+id/btn_send_check_out"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="25dp"
@@ -107,13 +107,13 @@
         android:text="Check in"
         android:textColor="#ffffff"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintBottom_toTopOf="@+id/btn_try_again"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_try_again"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="25dp"
@@ -125,7 +125,7 @@
         app:layout_constraintBottom_toBottomOf="@id/button5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_login_face" />
+        app:layout_constraintTop_toBottomOf="@id/btn_send_check_out" />
 
     <Button
         android:id="@+id/button5"
@@ -140,7 +140,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button4" />
+        app:layout_constraintTop_toBottomOf="@id/btn_try_again" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

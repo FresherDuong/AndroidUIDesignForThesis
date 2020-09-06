@@ -5,7 +5,6 @@ import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -27,7 +26,7 @@ public class FaceConfirmLogin extends AppCompatActivity {
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.setStatusBarColor(ContextCompat.getColor(FaceConfirmLogin.this, R.color.b4StartGra));
 
-        btnLogin = findViewById(R.id.btn_login_face);
+        btnLogin = findViewById(R.id.btn_send_check_out);
 
         btnLogin.setOnClickListener(view -> {
             Intent intent = new Intent(FaceConfirmLogin.this, Profile.class);

@@ -29,13 +29,10 @@ public class Splash extends AppCompatActivity {
 
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
 
-        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(Splash.this, ChooseOption.class);
-                startActivity(intent);
-                finish();
-            }
-        }, 2000);
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
+            Intent intent = new Intent(Splash.this, ChooseOption.class);
+            startActivity(intent);
+            finish();
+        }, 3000);
     }
 }

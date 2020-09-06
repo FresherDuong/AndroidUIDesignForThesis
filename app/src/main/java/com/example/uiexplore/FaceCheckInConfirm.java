@@ -5,7 +5,6 @@ import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -14,7 +13,7 @@ import java.util.Objects;
 
 public class FaceCheckInConfirm extends AppCompatActivity {
 
-    Button button;
+    Button button, btnSendAPI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +27,15 @@ public class FaceCheckInConfirm extends AppCompatActivity {
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.setStatusBarColor(ContextCompat.getColor(FaceCheckInConfirm.this, R.color.btnBlue));
 
-        button = findViewById(R.id.button4);
+        button = findViewById(R.id.btn_try_again);
         button.setOnClickListener(view -> {
             Intent intent = new Intent(this, UnknownFace.class);
             startActivity(intent);
+        });
+        btnSendAPI = findViewById(R.id.btn_send_check_out);
+        btnSendAPI.setOnClickListener(view -> {
+            MyCustomDialog successCheckIn = new MyCustomDialog(FaceCheckInConfirm.this, "Check in thành công !");
+            successCheckIn.startSuccessMakeARollCallDialog();
         });
     }
 }
